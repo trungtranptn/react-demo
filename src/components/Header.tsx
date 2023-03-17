@@ -1,5 +1,3 @@
-import '../App.css';
-
 type props = {};
 
 export const Header = (props: props) => {
