@@ -1,14 +1,14 @@
 import "./App.css";
-import { Body } from "./components/Body";
-import { Footer } from "./components/Footer";
+import { Button } from "./components/Button";
 import { Header } from "./components/Header";
+import { Todos } from "./components/Todos";
 
 function App() {
   return (
     <>
       <Header />
-      <Body />
-      <Footer />
+      <Todos />
+      <Button />
     </>
   );
 }

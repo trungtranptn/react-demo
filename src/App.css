@@ -1,56 +1,44 @@
-.border {
-  border-style: solid;
-  margin: 5px;
-}
-
-.flex {
+.header {
+  text-align: center;
   display: flex;
-}
-
-.width-full {
-  width: auto;
-}
-
-.width-70 {
-  width: 70%;
-}
-
-.width-80 {
-  width: 80%;
-}
-
-.width-30 {
-  width: 30%;
-}
-
-.height-body {
-  min-height: 68vh;
-}
-
-.height-100px{
-    height: 100px;
-}
-
-.box {
-  margin: 5px;
-  width: 24%;
-  height: 100px;
-  background-color: cadetblue;
-}
-
-.box:hover{
-  background-color: burlywood;
-}
-
-.box p {
-  font-weight: 700;
-}
-
-.justify-content-sb {
-  justify-content: space-between;
-}
-
-.text-center {
   justify-content: center;
-  align-items: center;
+  width: 400px;
+  background-color: hotpink;
+}
+
+.title {
+  color: antiquewhite;
+}
+
+.icon {
+  margin: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.button-add-task{
+  width: 400px;
+  height: 50px;
+  background-color: hotpink;
+  border: none;
+  font-size: medium;
+  font-weight: bold;
+  color: antiquewhite;
+}
+
+.button-add-task:hover{
+  background-color: pink;
+  color: hotpink;
+}
+
+
+.text-disable{
+  text-decoration: line-through;
+  color: gray;
 }

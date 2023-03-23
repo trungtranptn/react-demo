@@ -1,9 +1,9 @@
-type props = {};
+type props = {}
 
 export const Header = (props: props) => {
-  return (
-    <div className="flex border text-center">
-      <h2>HEADER</h2>
-    </div>
-  );
-};
+    return(
+        <div className="header">
+            <h2 className="title">Todo List</h2>
+        </div>
+    )
+}
