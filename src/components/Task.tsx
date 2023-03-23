@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { IconTrash } from "../Icons/IconTrash";
+import { TaskType } from "../types/TaskType";
 
 type props = {
-  name: string;
-};
+  data: TaskType,
+  actionDelete: (id: string) => void
+}
 
 export const Task = (props: props) => {
   const [isChoose, setIsChoose] = useState(false);
@@ -12,17 +14,21 @@ export const Task = (props: props) => {
     setIsChoose(!isChoose);
   };
 
+  const handleDeleteTask = () =>{
+    props.actionDelete(props.data.id)
+  }
+
   return (
-    <div className="task">
+    <div className="task mt-5 mb-5">
       <input type="checkbox" onChange={handleChange}></input>
       {isChoose ? (
-        <h3 className="text-disable">{props.name}</h3>
+        <h3 className="text-xl font-bold line-through text-gray-500">{props.data.name}</h3>
       ) : (
-        <h3>{props.name}</h3>
+        <h3 className="text-xl font-bold">{props.data.name}</h3>
       )}
-      <div className="icon">
+      <button className="icon" onClick={handleDeleteTask}>
         <IconTrash />
-      </div>
+      </button>
     </div>
   );
 };
