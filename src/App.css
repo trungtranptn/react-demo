@@ -48,3 +48,7 @@
   text-decoration: line-through;
   color: gray;
 }
+
+.modal{
+  width: 400px;
+}
